@@ -1,0 +1,9 @@
+steps:
+- id: 'Terraform Init'
+  name: 'natoora/terraform:20221017'
+  env:
+  - 'BRANCH_NAME=$BRANCH_NAME'
+  script: |
+    #!/usr/bin/env bash
+    cd $_DIR 
+    pwd
