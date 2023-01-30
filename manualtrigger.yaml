@@ -7,7 +7,7 @@ steps:
   script: |
     #!/usr/bin/env bash
     echo "CD TO VAR DIR"
-    cd ${_DIR} 
+    cd "$_DIR"
     pwd
 options:
   dynamic_substitutions: true
