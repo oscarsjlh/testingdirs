@@ -5,5 +5,8 @@ steps:
   - 'BRANCH_NAME=$BRANCH_NAME'
   script: |
     #!/usr/bin/env bash
-    cd $_DIR 
+    cd ${_DIR} 
     pwd
+options:
+  dynamic_substitutions: true
+
