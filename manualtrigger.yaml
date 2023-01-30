@@ -3,8 +3,10 @@ steps:
   name: 'natoora/terraform:20221017'
   env:
   - 'BRANCH_NAME=$BRANCH_NAME'
+  = '_DIR=$_DIR'
   script: |
     #!/usr/bin/env bash
+    echo "CD TO VAR DIR"
     cd ${_DIR} 
     pwd
 options:
